@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpongeBob - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+	<style>
+        /* 水母鼠标图标 */
+        body {
+            cursor: url('images/fff.png'), auto;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* 页面文字居中 */
+        }
+
+        /* 页面居中容器 */
+        #bigbox {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* 导航按钮居中 */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* home-intro 内容居中 */
+        .home-intro {
+            text-align: center;
+        }
+
+        /* banner 图片居中 */
+        #banner_home img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    </style>
+
+</head>
+<body style="background-color: #fff275; font-family: 'Comic Sans MS', 'Comic Neue', cursive;">
+    <div id="bigbox">
+        <div class="topbar">
+            <div class="logo">
+                <img src="images/111.jpg" alt="SpongeBob Logo">
+                <span class="brand" style="font-size:90px; font-family: 'Comic Sans MS', cursive; color:#ff6f00;">SpongeBob</span>
+            </div>
+            <form class="search" role="search">
+                <input type="search" placeholder="Search..." aria-label="Search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <header>
+            <a href="home.html">Home</a>
+            <a href="overview.html">Overview</a>
+            <a href="characters.html">Characters</a>
+            <a href="gallery.html">Gallery</a>
+        </header>
+
+        <div id="banner_home" class="reveal reveal-zoom">
+            <img src="images/666.jpg" alt="SpongeBob Home Banner" loading="lazy">
+        </div>
+
+        <section class="home-intro reveal">
+            <h1>Welcome to Bikini Bottom!</h1>
+            <p>Jump into the bright and bubbly world of SpongeBob SquarePants! Explore characters, stories, and fun moments from the iconic animated series loved around the world.</p>
+        </section>
+
+        <section class="nav-buttons reveal">
+            <a class="btn3d" href="home.html">Overview</a>
+            <a class="btn3d" href="characters.html">Characters</a>
+            <a class="btn3d" href="gallery.html">Gallery</a>
+        </section>
+
+        <footer> SpongeBob SquarePants </footer>
+    </div>
+</body>
+</html>

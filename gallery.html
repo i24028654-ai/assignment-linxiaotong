@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpongeBob - Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+	<style>
+        /* 水母鼠标图标 */
+        body {
+            cursor: url('images/fff.png'), auto;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* 文字居中 */
+        }
+
+        /* 页面居中容器 */
+        #bigbox {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Gallery 图片居中 */
+        .gallery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery-img {
+            max-width: 250px;
+        }
+    </style>
+</head>
+<body style="background-color: #fff275; font-family: 'Comic Sans MS', 'Comic Neue', cursive;">
+    <div id="bigbox">
+        <div class="topbar">
+            <div class="logo">
+                <img src="images/111.jpg" alt="SpongeBob Logo">
+                <span class="brand" style="font-size:90px; font-family: 'Comic Sans MS', cursive; color:#ff6f00;">SpongeBob</span>
+            </div>
+            <form class="search" role="search">
+                <input type="search" placeholder="Search..." aria-label="Search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <header>
+            <a href="home.html">Home</a>
+            <a href="overview.html">Overview</a>
+            <a href="characters.html">Characters</a>
+            <a href="gallery.html">Gallery</a>
+        </header>
+
+        <h1 class="reveal" style="text-align:center; margin-top:5px;">Gallery</h1>
+        <p style="text-align:center; font-size:18px;">A collection of fun SpongeBob moments!</p>
+
+        <div class="gallery-grid">
+            <img src="images/444.jpg" alt="Gallery Image 1" class="gallery-img reveal">
+            <img src="images/888.jpg" alt="Gallery Image 2" class="gallery-img reveal">
+            <img src="images/999.jpg" alt="Gallery Image 3" class="gallery-img reveal">
+            <img src="images/aaa.jpg" alt="Gallery Image 4" class="gallery-img reveal">
+            <img src="images/bbb.jpg" alt="Gallery Image 5" class="gallery-img reveal">
+            <img src="images/ccc.jpg" alt="Gallery Image 6" class="gallery-img reveal">
+        </div>
+
+        <footer> SpongeBob SquarePants </footer>
+    </div>
+</body>
+</html>
